@@ -9,7 +9,7 @@ import MySQLdb
 
 
 mysql_cn= MySQLdb.connect(host='128.193.185.85', 
-                user='xiaoxi', passwd='dfdongr8j1ko6', 
+                user='xiaoxi', passwd='yourpasswd', 
                 db='ifng.akk.glucose')
 df_mysql = pd.read_sql('select * from gene_expressiondata_microarray_nov_2014_ko_rifng;', con=mysql_cn)    
 print 'loaded dataframe from MySQL. records:', len(df_mysql)
